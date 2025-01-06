@@ -50,7 +50,7 @@ $todos = $stmnt->fetchAll();
             <td style="border: 1px solid #000; padding: 8px;"><?php echo $todo->todo_hrs; ?></td>
             <td style="border: 1px solid #000; padding: 8px;">
                 <a href="update.php?todo_id=<?php echo $todo->todo_id; ?>">UPDATE</a>
-                <a href="update.php?todo_id=<?php echo $todo->todo_id; ?>">DELETE</a>
+                <a href="delete.php?todo_id=<?php echo $todo->todo_id; ?>">DELETE</a>
             </td>
         </tr>   
 <?php endforeach; ?>
