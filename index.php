@@ -18,8 +18,8 @@ include('connection.php');
 </form>
 
 <?php
-$todo_name = !empty($_POST['todo_name']) ? $_POST['todo_name'] : null;
-$todo_hrs = !empty($_POST['todo_hrs']) ? $_POST['todo_hrs'] : null;
+$todo_name = !empty($_POST['todo_name']) ? $_POST['todo_name'] : '';
+$todo_hrs = !empty($_POST['todo_hrs']) ? $_POST['todo_hrs'] : '';
 
 if(isset($_POST['submit'])){
     $sql = 'INSERT INTO todos(todo_name, todo_hrs) VALUES (?, ?)';
